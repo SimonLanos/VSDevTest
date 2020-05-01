@@ -254,6 +254,7 @@ public static class VoodooSauce
 	//-----------------ANSWER---------------------
 	/* 
 	 * I's make the system mentionned above.
+	 * Also the RGPD is only fetched at the start of the game, I'd make it so that it's not a problem anymore.
 	 */
 	//------------------------------------------
 
