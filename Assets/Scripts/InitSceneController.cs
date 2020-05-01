@@ -57,7 +57,7 @@ public class InitSceneController : MonoBehaviour
         }
         else
         {
-            if (PlayerPrefs.GetInt("consent")!=0)
+            if (PlayerPrefs.GetInt("consent") != 0)
             {
                 VoodooSauce.GrantConsent();
             }
@@ -77,6 +77,7 @@ public class InitSceneController : MonoBehaviour
 
     private void _ShowAndroidToastMessage(string message)
     {
+#if UNITY_ANDROID
         AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         AndroidJavaObject unityActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
 
@@ -89,5 +90,6 @@ public class InitSceneController : MonoBehaviour
                 toastObject.Call("show");
             }));
         }
+#endif
     }
 }
