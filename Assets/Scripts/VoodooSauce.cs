@@ -226,15 +226,61 @@ public static class VoodooSauce
 	// What processes would you suggest to ensure that the VoodooSauce SDK is minimally affected by crashes 
 	// in another SDK?
 
+	//-----------------ANSWER---------------------
+	/* 
+	 * I'm unsure as to if there is a solution to avoid the crash bringing down the entire application.
+	 * I don't think there is a reliable way to avoid a disastre once the crash happened.
+	 * Though, we can act on two things : lowering the probability of a crash and knowing when a crash happened.
+	 * The former can be done with diligent unit testing and careful updates of the SDKs the company is using.
+	 * The later can be done through impmementing a crash report tool and sending logs to a database.
+	 * We have to log somewhere wic ad the game is displaying, so we could log what it attends to load and the result of the loading.
+	 * That way if we are using different ad providers we can see if one of them is causing a particular issue.
+	 */
+	//------------------------------------------
+
+
+
 	// What are some pitfalls/shortcomings in your above implementation?
+	//-----------------ANSWER---------------------
+	/* 
+	 * The main pitfall I see is that we need to go through the loading scene for the ads to work.
+	 * If I had more time I'd try to make a fallback that initiates VoodooSauce the same way InitSceneController does, but during play time.
+	 * It's very usual for developpers to play the game from any scene during development and it can be tedious and time-consumming to always come back to the loading scene to start the game.
+	 * (Say, when you are testing a very small feature in the late game)
+	 */
+	//------------------------------------------
 
 	// How would you improve your implementation if you had more than 2 hours? 
+	//-----------------ANSWER---------------------
+	/* 
+	 * I's make the system mentionned above.
+	 */
+	//------------------------------------------
+
 
 	// What do you enjoy the most about being a developer? 
+	//-----------------ANSWER---------------------
+	/* 
+	 * Planning and making systems that work.
+	 */
+	//------------------------------------------
 
 	// What do you enjoy the least about being a developer? 
+	//-----------------ANSWER---------------------
+	/* 
+	 * Sitting at my desk all day and burning my eyes to a crisp looking at the monitor.
+	 */
+	//------------------------------------------
 
 	// Why do you want to work on the VoodooSauce SDK vs. creating games in Unity?
+	//-----------------ANSWER---------------------
+	/* 
+	 * Versus as in "instead of" ?
+	 * It's not like you're not making games. You're still a part of the process.
+	 * No one to work on the SDK -> no ads -> no income -> no company -> no game.
+	 * Saying tht's not the case would be the same as saying the Concept Artist whose work isn't directly implemented isn't part of the process of creating a game.
+	 */
+	//------------------------------------------
 
 
 
