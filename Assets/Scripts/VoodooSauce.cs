@@ -215,8 +215,8 @@ public static class VoodooSauce
 		// 1) secondsBetweenAds: only show an ad if the previous ad was shown more than "secondBetweenAds" ago 
 		// 2) gamesBetweenAds: only show an ad if "gamesBetweenAds" amount of games was played since the previous ad 
 
-		//secondsBetweenAds = _secondsBetweenAds;
-		//gamesBetweenAds = _gamesBetweenAds;
+		secondsBetweenAds = _secondsBetweenAds;
+		gamesBetweenAds = _gamesBetweenAds;
 	}
 
 
